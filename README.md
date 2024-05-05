@@ -1,1 +1,1 @@
-# IT-Today-Platform
+# IT Today Platform
