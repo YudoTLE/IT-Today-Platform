@@ -1,0 +1,116 @@
+main {
+    flex-grow: 1;
+    padding: 1rem;
+    padding-left: calc(300px + 1rem);
+}
+main section {
+    display: flex;
+    margin: 1rem 0;
+}
+
+main section.parameter {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px;
+}
+main .parameter {
+    text-align: center;
+}
+
+main .key {
+    color: var(--main-color-3);
+}
+main .value {
+    color: var(--secondary-color-4);
+}
+
+main ul {
+
+}
+main ul label {
+    color: var(--secondary-color-4);
+    /* font-size: 2rem; */
+}
+main ul input {
+    color: var(--secondary-color-4);
+    padding: 0.4rem;
+}
+main ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 0.4rem 0;
+}
+main ul li div {
+    display: flex;
+    align-items: center;
+}
+main ul li div input {
+    flex-grow: 1;
+}
+main ul li div *:not(input) {
+    margin: 0 0.4rem;
+}
+
+main {
+    overflow-x: scroll;
+    flex-grow: 1;
+}
+main tr {
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    /* min-width: 200px; */
+}
+main tr:nth-child(odd) {
+    background-color: var(--main-color-1);
+}
+main tr:nth-child(even) {
+    background-color: var(--secondary-color-2);
+}
+main tr:nth-child(odd) .key {
+    color: var(--secondary-color-3);
+}
+main tr:nth-child(odd) .value {
+    color: var(--secondary-color-4);
+}
+main tr:nth-child(even) .key {
+    color: var(--secondary-color-3);
+}
+main tr:nth-child(even) .value {
+    color: var(--secondary-color-4);
+}
+main th, main td {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main th {
+    height: 80px;
+    background-color: var(--main-color-1);
+    color: var(--secondary-color-4);
+}
+main td {
+    padding: 1.4rem 0;
+    overflow: hidden;
+}
+
+
+
+main .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    border-radius: 3px;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+main .action.remove {
+    background-color: red;
+    color: var(--main-color-1);
+}
+/* main .action.edit {
+    background-color: green;
+    color: var(--main-color-1);
+} */

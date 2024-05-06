@@ -1,0 +1,6 @@
+perhatikan port 
+
+ittoday     : 8080
+dev.ittoday : 3000
+
+run: npx nodemon app

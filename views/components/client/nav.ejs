@@ -1,0 +1,54 @@
+<nav>
+    <div class='logo-container'>
+        <img class='logo' src='./images/home/logo-ittoday2024.png' alt=''>
+    </div>
+    <% if (nav_id == 0) { %>
+        <ul>
+            <div class='internal'>
+                <li><a href='#' onclick="scrollToElement(event, 'home')">
+                    <h1><span class='hover-scale-105'>Home</span></h1>
+                </a></li>
+                <li><a href='#' onclick="scrollToElement(event, 'about')">
+                    <h1><span class='hover-scale-105'>About</span></h1>
+                </a></li>
+                <li><a href='#' onclick="scrollToElement(event, 'recap')">   
+                    <h1><span class='hover-scale-105'>Recap</span></h1>
+                </a></li>
+                <li><a href='#' onclick="scrollToElement(event, 'reach-us')">
+                    <h1><span class='hover-scale-105'>Reach Us</span></h1>
+                </a></li>
+            </div>
+            <div class='external'>
+                <li><a href='/dashboard' class='button hover-scale-105 hover-shine-lr'>
+                    <h1>Dashboard</h1>
+                </a></li>
+                <li><a href='/dashboard' class='button hover-scale-105 hover-shine-lr'>
+                    <h1>Sign In</h1>
+                </a></li>
+            </div>
+        </ul>
+    <% } %>
+    <% if (nav_id == 1) { %>
+        <ul>
+            <div class='internal'>
+                <li><a href='#' onclick="scrollToElement(event, 'home')">
+                    <h1><span class='hover-scale-105'>Home</span></h1>
+                </a></li>
+                <li><a href='#' onclick="scrollToElement(event, 'competition')">
+                    <h1><span class='hover-scale-105'>Competition</span></h1>
+                </a></li>
+                <li><a href='#' onclick="scrollToElement(event, 'workshop')">
+                    <h1><span class='hover-scale-105'>Workshop</span></h1>
+                </a></li>
+            </div>
+            <div class='external'>
+                <li><a href='/' class='button hover-scale-105 hover-shine-lr'>
+                    <h1>Back</h1>
+                </a></li>
+                <li><a href='/dashboard' class='button hover-scale-105 hover-shine-lr'>
+                    <h1>Sign In</h1>
+                </a></li>
+            </div>
+        </ul>
+    <% } %>
+</nav>

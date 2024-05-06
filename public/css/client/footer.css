@@ -1,0 +1,46 @@
+footer h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+footer h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+footer p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+footer {
+    text-align: left;
+    background: linear-gradient(0deg, var(--main-color2), var(--main-color3));
+}
+footer .container {
+    padding: 2rem 2rem 1rem 2rem;
+    gap: 1rem 1rem;
+}
+footer .copyright {
+    padding: 0.5rem 0.5rem;
+    background-color: var(--main-color1);
+}
+footer .icon-container {
+    display: flex;
+}
+footer .icon {
+    position: relative;
+    margin: 0.5rem 0.2rem;
+    padding: 0.7rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--main-color2);
+    color: inherit;
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+footer .icon:hover {
+    background-color: var(--main-color3);
+    filter: brightness(70%);
+    cursor: pointer;
+}

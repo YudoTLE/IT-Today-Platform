@@ -1,0 +1,219 @@
+
+main section {
+    position: relative;
+}
+main h1, main h2, main h3 {
+    cursor: default;
+}
+main h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+main h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+main h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+main p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: justify;
+}
+
+#home, #about, #recap, #reach-us, #dashboard-home {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dashboard-home .container {
+    flex-grow: 1;
+    padding: 2rem;
+}
+#dashboard-home .card:nth-child(1) {
+    flex-grow: 1;
+}
+#dashboard-home .card:nth-child(2) {
+    flex-grow: 3;
+}
+
+#home .container {
+    padding: 8rem 0;
+}
+#home .logo {
+    width: 30rem;
+    animation-name: vertical-hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+#home .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+#home h1 {
+    margin: 0.5rem 0;
+}
+#home h3 {
+    margin: 0.3rem 0;
+}
+#home .coming-soon {
+    background: linear-gradient(90deg, var(--secondary-color3), var(--secondary-color2));
+    padding: 0.8em;
+    margin: 2rem 0;
+    width: 10rem;
+    border-radius: 10rem;
+    position: relative;
+    overflow: hidden;
+}
+#home .coming-soon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    animation: shine-lr 2s infinite;
+    border-radius: inherit;
+}
+
+#about p {
+    text-indent: 2em;
+}
+#about .container {
+    margin: 15rem 0;
+    padding: 0 5rem;
+    background: url('/images/home/background-about.png') rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+#about h2 {
+    margin: 2rem 0;
+}
+#about p {
+    margin: 0.5rem 0;
+}
+
+#recap {
+    text-align: left;
+}
+#recap .container {
+    padding: 2rem 0rem;
+}
+#recap .background {
+    margin: auto;
+    width: 50rem;
+    transform: translate(0, 1rem);
+    z-index: -1;
+}
+#recap .content-container {
+    padding: 0 2rem;
+    flex-direction: column;
+    transform: translate(0, -3rem);
+}
+
+#reach-us .container {
+    padding: 4rem 2rem 1rem 2rem;
+}
+#reach-us .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+#reach-us .box {
+    display: flex;
+    padding: 0.8rem;
+    border-radius: 0.25em;
+    background: linear-gradient(0deg, var(--main-color2),  var(--main-color3));
+    text-align: justify;
+}
+#reach-us .box h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+#reach-us .box p {
+    font-size: 0.6rem;
+    font-weight: 200;
+}
+#reach-us .form-container {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2rem 2rem minmax(12rem, 1fr) 3rem;
+}
+#reach-us .info-subject, #reach-us .info-message {
+    grid-column: span 2;
+}
+#reach-us .form-container .info {
+    flex-direction: column;
+}
+#reach-us .info input, #reach-us .info textarea {
+    flex: 1;
+    background-color: var(--main-color5);
+    color: white;
+    resize: none;
+}
+#reach-us .info-message {
+    display: flex;
+}
+#reach-us .information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#reach-us .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+#reach-us .info {
+    flex: 1;
+    display: flex;
+    gap: 0.2rem;
+}
+#reach-us .info .text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#reach-us .information-container .info {
+    min-width: 15.5rem;
+}
+#reach-us .map-container {
+    display: flex;
+}
+#reach-us .map {
+    flex: 1;
+    height: 20rem;
+    border-radius: 0.5em 0.5em 0 0;
+}
+#reach-us .icon {
+    position: relative;
+    margin: 0.2rem;
+    padding: 0.7rem;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--secondary-color3);
+    overflow: hidden;
+    transition: all 0.1s ease-in-out;
+}
+#reach-us .icon:hover {
+    background-color: var(--secondary-color4);
+    cursor: copy;
+}
+#reach-us .submit {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}
