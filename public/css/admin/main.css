@@ -49,6 +49,19 @@ main ul li div input {
 main ul li div *:not(input) {
     margin: 0 0.4rem;
 }
+main ul li.key-value {
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--main-color-1);
+}
+main ul li.key-value h2:first-child {
+    color: var(--secondary-color-4);
+}
+main ul li.key-value + li.key-value {
+    border-top: 1px solid var(--secondary-color-3);
+}
 
 main {
     overflow-x: scroll;
@@ -96,20 +109,7 @@ main td {
 
 
 
-main .action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.2rem;
-    border-radius: 3px;
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-}
-main .action.remove {
-    background-color: red;
-    color: var(--main-color-1);
-}
+
 /* main .action.edit {
     background-color: green;
     color: var(--main-color-1);

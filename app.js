@@ -48,17 +48,25 @@ app.get("/dashboard-admin/competition", (req, res) => {
 });
 
 // harus backend2an
+
 app.get("/dashboard-admin/competition/competition-name", (req, res) => {
-   res.render("pages/admin/competitionDetail", {
-        title: "competition-name",
-        layout: "components/admin/layout"
-   })
+  res.render("pages/admin/competitionDetail", {
+       title: "competition-name",
+       layout: "components/admin/layout"
+  })
 });
-app.get("/dashboard-admin/competition/competition-name", (req, res) => {
-   res.render("pages/admin/competitionDetail", {
-        title: "competition-name",
-        layout: "components/admin/layout"
-   })
+app.get("/dashboard-admin/event/event-name", (req, res) => {
+  res.render("pages/admin/eventDetail", {
+       title: "event-name",
+       layout: "components/admin/layout"
+  })
+});
+
+app.get("/dashboard-admin/competition/competition-name/team-name", (req, res) => {
+  res.render("pages/admin/competitionTeamDetail", {
+       title: "team-name",
+       layout: "components/admin/layout"
+  })
 });
 
 app.listen(process.env.PORT, () => {

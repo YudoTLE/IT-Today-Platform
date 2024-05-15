@@ -9,6 +9,7 @@ nav {
     box-sizing: border-box;
     background-color: var(--main-color-1);
     color: var(--secondary-color-4);
+    z-index: 100;
 }
 section {
     margin: 1rem 0;
